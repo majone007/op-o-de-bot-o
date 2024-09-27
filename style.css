@@ -1,0 +1,59 @@
+/* Estilo básico da página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+button:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Sombra ao focar */
+}
+
+/* Estilo do container da imagem */
+#imagemContainer {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+#imagem {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do container */
+    max-width: 300px; /* Limita a largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Sombra mais forte */
+}
+
+/* Estilo do texto */
+#texto {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Estilo do botão ativo */
+.active {
+    background-color: #ff5722; /* Cor para o botão ativo */
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.5); /* Sombra para o botão ativo */
+}

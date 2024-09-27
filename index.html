@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha uma Opção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Escolha uma Opção</h1>
+    
+    <!-- Botões para interagir com o JavaScript --> 
+    <button id="btnSol" onclick="exibirImagem('sol', this)">Ver Sol</button>
+    <button id="btnLua" onclick="exibirImagem('lua', this)">Ver Lua</button>
+    <button id="btnEstrela" onclick="exibirImagem('estrela', this)">Ver Estrela</button>
+    <button id="btnEstrelaCadente" onclick="exibirImagem('cadent', this)">Ver Estrela Cadente</button>
+    <button id="btnPlaneta" onclick="exibirImagem('planet', this)">Ver Planeta</button>
+
+    <!-- Área onde as imagens serão exibidas -->
+    <div id="imagemContainer">
+        <img id="imagem" src="" alt="Imagem" style="display:none;">
+    </div>
+
+    <!-- Área onde o texto será alterado -->
+    <p id="texto">Clique em um dos botões acima para exibir uma imagem e uma mensagem.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
